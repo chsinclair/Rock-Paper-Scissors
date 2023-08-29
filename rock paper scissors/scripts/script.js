@@ -47,10 +47,10 @@ function game() {
 game();
 
     if (playerWins > computerWins) {
-        console.log(`You won ${playerWins} ${playerWins > 1 ? 'games' : 'game'} and the computer won ${computerWins} ${computerWins > 1 ? 'games' : 'game'}. You win!`)
+        console.log(`You won ${playerWins} ${playerWins === 1 ? 'game' : 'games'} and the computer won ${computerWins} ${computerWins === 1 ? 'game' : 'games'}. You win!`);
     } else if (playerWins === computerWins) {
-        console.log(`You won ${playerWins} ${playerWins > 1 ? 'games' : 'game'} and the computer won ${computerWins} ${computerWins > 1 ? 'games' : 'game'}. It's a tie!`)
+        console.log(`You won ${playerWins} ${playerWins === 1 ? 'game' : 'games'} and the computer won ${computerWins} ${computerWins === 1 ? 'game' : 'games'}. It's a tie!`);
     } else {
-        console.log(`You won ${playerWins} ${playerWins > 1 ? 'games' : 'game'} and the computer won ${computerWins} ${computerWins > 1 ? 'games' : 'game'}. You lose!`)
+        console.log(`You won ${playerWins} ${playerWins === 1 ? 'game' : 'games'} and the computer won ${computerWins} ${computerWins === 1 ? 'game' : 'games'}. You lose!`);
     }
 
